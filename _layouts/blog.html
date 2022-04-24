@@ -4,6 +4,11 @@
   <body>
     <main>
       {% include nav.html navtype=page.navtype %}{% include header.html %} {% include bio.html %} 
+      {% if page.navtype != "plain" %}
+      <script src="/assets/js/navbar.js"></script>
+      <script type="application/javascript">
+      </script>
+      {% endif %}
       <section class="articles">
         {% for post in site.posts %}
         <article class="article">
