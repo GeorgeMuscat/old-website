@@ -1,0 +1,35 @@
+---
+layout: post
+title: MFA Prompt Bombing
+date: 2023-10-6
+categories: ["Security", "MFA", "Scams"]
+---
+
+Authentication is defined as the process of verifying the identity of a user or system. It is a crucial aspect of cybersecurity, as it helps ensure that only authorized individuals or entities have access to sensitive information, resources and systems.
+
+Authentication has become second nature to almost every person as they prove who they are, utilising the most common forms of authentication, such as passwords, personal identification numbers, personal identifying information (incl. DOB and legal name) and signatures.
+
+MFA stands for Multi-Factor Authentication, and its purpose is to add an extra layer of security to the authentication process. The factors of authentication are:
+
+- Something you know
+- Something you have
+- Something you are
+
+Authentication methods such as passwords and PINs are examples of **something you know**.
+
+An example of **something you have**, could smart cards, hand-held tokens and devices such as yubikeys.
+
+**Something you are** includes biometrics such as fingerprints, hand geometry, retinal or iris scans, handwriting, and voice analysis.
+
+Instead of relying solely on a password, MFA requires the user to provide multiple pieces of evidence to prove their identity, such as a password, a fingerprint scan, or a security token. This helps protect against various security threats, such as password breaches or phishing attacks, by making it significantly more difficult for unauthorized individuals to gain access to accounts or systems.
+
+The most common form of MFA is the use of a one-time password (OTP) sent to a user's mobile device. After entering their username and password, the user is prompted to enter the OTP received via SMS or a mobile app. This adds an additional layer of security by verifying that the user has access to the registered mobile device.
+
+MFA prompt bombing occurs when an attacker overwhelms a user with multiple MFA prompts in a short period of time, with the intention of causing frustration and fatigue. This can lead to users becoming more susceptible to phishing attacks or making mistakes in the authentication process or even lead to them approving the MFA prompt, granting access to the attacker.
+
+Some victims of this attack include:
+
+- Uber: https://www.darkreading.com/attacks-breaches/uber-breach-external-contractor-mfa-bombing-attack
+- University of Queensland https://my.uq.edu.au/information-and-services/information-technology/cyber-security/cyber-security-uq/mfa-prompt-bombing-scam
+
+New methods of MFA include having the user input a number that is displayed on the device logging in. Another change to MFA systems is removing the notifications and instead telling the user which app to access on the device being logged in. Both of these methods are employed by companies such as Google and Microsoft to combat MFA fatigue.
